@@ -1,0 +1,27 @@
+<form action="welcome" method="get">
+enter your name<input type="text" name="name"><br>
+<input type="submit" value="login">
+</form>
+
+import javax.servlet.http.*;
+import javax.servlet.*;
+import java.io.*;
+public class demo serv extends httpservelt{
+public void doget(http servlet request req,http servlet response res)
+throws servlet exception,io exception 
+{
+res.set contenttype("text/html");
+pw=res.get writer();
+string name=req.get parameter("name");
+pw.println("welcome" +name);
+pw.close();
+}
+}
+
+
+
+
+
+
+
+
